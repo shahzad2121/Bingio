@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    color: white;
+    font-family: 'satoshi';
+}
+/* ::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.react-icons{
+    width: 32px;
+    height: 32px;
+
+}
+.card::-webkit-scrollbar{
+    display: auto;
+} */
+
+/* Container styling */
+.dropdown-container {
+    position: relative;
+    width: 200px;
+  }
+  
+  /* Button styling */
+  .dropdown-button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    background-color: #1F2937;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin-top: 2px;
+    padding: 0;
+    list-style: none;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    background-color: #1F2937;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default, show on hover */
+  }
+  
+  /* Dropdown item */
+  .dropdown-item {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #bfbfbf;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show menu on hover (basic behavior without JS) */
+  .dropdown-container:hover .dropdown-menu {
+    display: block;
+  }
+  
