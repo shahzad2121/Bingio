@@ -2,17 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    color: white;
-    font-family: 'satoshi';
+* {
+  color: white;
+  font-family: "satoshi";
 }
-/* ::-webkit-scrollbar{
-    width: 10px;
-    height: 10px;
+::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  background: linear-gradient(#2f609d, #c6764100);
+  height: 2px;
+}
 
-}
 ::-webkit-scrollbar{
-    display: none;
+    width: 8px;
+    height: 8px;
+    background: black;
 }
 .react-icons{
     width: 32px;
@@ -21,56 +24,50 @@
 }
 .card::-webkit-scrollbar{
     display: auto;
-} */
+} 
 
 /* Container styling */
-.dropdown-container {
-    position: relative;
-    width: 200px;
-  }
-  
-  /* Button styling */
-  .dropdown-button {
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 16px;
-    /* border: 1px solid #ccc; */
-    border-radius: 5px;
-    background-color: #1F2937;
-    cursor: pointer;
-    text-align: left;
-  }
-  
-  /* Dropdown menu */
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    margin-top: 2px;
-    padding: 0;
-    list-style: none;
-    /* border: 1px solid #ccc; */
-    border-radius: 5px;
-    background-color: #1F2937;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none; /* Hidden by default, show on hover */
-  }
-  
-  /* Dropdown item */
-  .dropdown-item {
-    padding: 10px 15px;
-    font-size: 14px;
-    color: #bfbfbf;
-    cursor: pointer;
-  }
-  
-  .dropdown-item:hover {
-    background-color: #f1f1f1;
-  }
-  
-  /* Show menu on hover (basic behavior without JS) */
-  .dropdown-container:hover .dropdown-menu {
-    display: block;
-  }
-  
+/* select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #272720;
+  background-image: none;
+  flex: 1;
+  padding: 0 0.5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: #272720;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #272720;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+select:hover::after {
+  color: #6556cd;
+} */

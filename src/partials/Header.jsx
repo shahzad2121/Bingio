@@ -32,11 +32,10 @@ const Header = () => {
           background: `linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url(https://image.tmdb.org/t/p/original/${
             headerImg.backdrop_path || headerImg.poster_path
           })`,
-          backgroundPosition: "right top",
+          backgroundPosition: "center left center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          width: "100%",
-          height: "full",
+
         }}
       >
         <div className="">

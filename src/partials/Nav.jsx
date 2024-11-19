@@ -29,10 +29,16 @@ const Nav = () => {
           </h4>
         </div>
         <div className="flex gap-12 text-base items-center">
-          <Link className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200">
+          <Link
+            to="/"
+            className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200"
+          >
             Home
           </Link>
-          <Link className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200">
+          <Link
+            to="/trending"
+            className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200"
+          >
             Trending
           </Link>
           <Link className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200">
