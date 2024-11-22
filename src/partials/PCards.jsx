@@ -9,12 +9,13 @@ const PCards = () => {
 
   const getTrendingMovie = async () => {
     try {
-      const { data } = await instance.get(`watch/providers/regions?page=${page}`);
+      const { data } = await instance.get(
+        `watch/providers/regions?page=${page}`
+      );
       if (data.results.length > 0) {
         setMovies((prevState) => [...prevState, ...data.results]); // Append new results
         setPage((prevPage) => prevPage + 1);
         console.log(movies);
-        
       } else {
         setHasMore(false); // Stop loading when no more data
       }
@@ -37,7 +38,10 @@ const PCards = () => {
       >
         <div className="flex justify-between items-center flex-wrap">
           {movies.map((m, i) => (
-            <div key={i} className="mb-5 w-[23vw] h-72 p-2 hover:bg-zinc-800 bg-zinc-900 duration-200 rounded-md">
+            <div
+              key={i}
+              className="mb-5 w-[23vw] h-72 p-2 hover:bg-zinc-800 bg-zinc-900 duration-200 rounded-md"
+            >
               <img
                 className="w-full object-cover object-center rounded-md"
                 src={`https://image.tmdb.org/t/p/original/${
@@ -46,9 +50,7 @@ const PCards = () => {
                 alt="Movie Poster"
               />
               <div className="w-full py-5 flex flex-col justify-end">
-                <h2 className="font-semibold text-xl leading-5">
-                  
-                </h2>
+                <h2 className="font-semibold text-xl leading-5"></h2>
                 <div className="flex items-center gap-2">
                   <p className="font-light text-base font-mono">
                     <i className="ri-star-s-fill"></i>
