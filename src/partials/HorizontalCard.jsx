@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import instance from "../Utils/Axios";
-import Dropdown from "./Dropdown";
 
 const HorizontalCard = () => {
   const [popular, setPopular] = useState([]);
@@ -23,7 +22,7 @@ const HorizontalCard = () => {
   return (
     <div className="w-full py-10">
       <div className="px-10 flex items-center justify-between mb-5">
-        <h3 className="font-semibold text-2xl">Live Show</h3>
+        <h3 className="font-semibold text-2xl">Trending</h3>
         {/* <Dropdown
           title="Select Category"
           func={(e) => setCategory(e.target.value)}
@@ -37,17 +36,17 @@ const HorizontalCard = () => {
         {popular.map((elem, i) => (
           <Link
             key={i}
-            className="flex min-w-[20%] bg-[#1F2937] p-2 rounded-md"
+            className="flex min-w-[20%] h-36 bg-[#1F2937] p-2 rounded-md"
           >
             <img
-              className="w-32 h-32 object-cover object-center rounded-md"
+              className="w-32 h-full object-cover object-center rounded-md"
               src={`https://image.tmdb.org/t/p/original/${
                 elem.backdrop_path || elem.profile_path
               }`}
               alt="Movie Poster"
             />
             <div className="px-4 py-5">
-              <h2 className="font-semibold text-xl">
+              <h2 className="font-medium leading-tight tracking-normal text-xl">
                 {elem.title || elem.original_title || elem.name}
               </h2>
               <p className="font-light text-base font-mono">

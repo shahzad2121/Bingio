@@ -41,15 +41,24 @@ const Nav = () => {
           >
             Trending
           </Link>
-          <Link className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200">
+          <Link
+            to="/movies"
+            className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200"
+          >
             Movies
           </Link>
-          <Link className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200">
-            Popular
-          </Link>
-          <Link className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200">
+          <Link
+            to="/tvshows"
+            className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200"
+          >
             Tv Shows
           </Link>
+          {/* <Link
+            to="/popular"
+            className="flex justify-center gap-1 hover:text-[#ba90f4] hover:font-normal duration-200"
+          >
+            Popular
+          </Link> */}
         </div>
       </div>
       <div className="relative">

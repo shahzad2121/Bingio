@@ -3,7 +3,7 @@ import Nav from "../partials/Nav";
 import { Link, useNavigate } from "react-router-dom";
 import Cards from "../partials/TCards";
 
-const Trending = () => {
+const TvShows = () => {
   const navigate = useNavigate();
   return (
     <div className="w-full min-h-screen">
@@ -24,4 +24,4 @@ const Trending = () => {
   );
 };
 
-export default Trending;
+export default TvShows;

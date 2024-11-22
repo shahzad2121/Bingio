@@ -1,9 +1,9 @@
 import React from "react";
 import Nav from "../partials/Nav";
 import { Link, useNavigate } from "react-router-dom";
-import Cards from "../partials/TCards";
+import PCards from "../partials/PCards";
 
-const Trending = () => {
+const Popular = () => {
   const navigate = useNavigate();
   return (
     <div className="w-full min-h-screen">
@@ -14,14 +14,14 @@ const Trending = () => {
             onClick={() => navigate(-1)}
             class="ri-arrow-left-line text-3xl cursor-pointer"
           ></i>
-          <h2 className="font-bold text-4xl">Trending Shows</h2>
+          <h2 className="font-bold text-4xl">Popular Shows</h2>
         </div>
         <Link>
-          <Cards />
+          <PCards />
         </Link>
       </div>
     </div>
   );
 };
 
-export default Trending;
+export default Popular;

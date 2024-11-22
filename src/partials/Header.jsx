@@ -35,7 +35,6 @@ const Header = () => {
           backgroundPosition: "center left center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-
         }}
       >
         <div className="">
@@ -43,11 +42,11 @@ const Header = () => {
             {info.name || info.original_title || info.original_name}
           </h1>
           <div className="flex items-center gap-5 mb-2 font-mono">
-            <h5 className="font-medium text-2xl">
+            <h5 className="font-medium text-xl">
               {info.media_type ? info.media_type.toUpperCase() : "no"}
             </h5>
-            <h6 className="font-medium text-2xl">|</h6>
-            <h5 className="font-medium text-2xl">
+            <h6 className="font-medium text-xl">|</h6>
+            <h5 className="font-medium text-xl">
               {info.first_air_date || info.release_date}
             </h5>
           </div>
