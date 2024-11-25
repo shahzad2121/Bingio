@@ -8,7 +8,8 @@ const Header = () => {
   const getHeaderimg = async () => {
     try {
       const { data } = await instance.get("trending/all/week");
-
+      console.log(data);
+      
       const getimg =
         data.results[(Math.random() * data.results.length).toFixed()]; // math.random get random image from api and .toFixed is used to find img dynamically and also math.random will give decimall value we use .tofind to make it number.
       setHeaderImg(getimg);
@@ -56,7 +57,9 @@ const Header = () => {
               ? info.overview.slice(0, 250)
               : "no description available"}
           </h3>
-          <Link className="bg-zinc-700 hover:bg-[#3BE477] duration-300 flex items-center py-2 px-3 gap-3 rounded-md w-fit mt-5">
+          <Link 
+          to={`/${info.media_type}/details/${info.id}`}
+          className="bg-zinc-700 hover:bg-[#3BE477] duration-300 flex items-center py-2 px-3 gap-3 rounded-md w-fit mt-5">
             <img className="w-8 h-8 " src="../public/play.png" alt="" />
             Watch Now
           </Link>

@@ -11,9 +11,9 @@ const Home = () => {
       <Header />
       <HorizontalCard />
     </div>
-  ):(
+  ) : (
     <h1 className="text-black">Loading...</h1>
-  )
+  );
 };
 
 export default Home;

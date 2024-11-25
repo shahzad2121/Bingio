@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import instance from "../Utils/Axios";
 
-const HorizontalCard = () => {
+const HorizontalCard = ({data}) => {
   const [popular, setPopular] = useState([]);
   const [category, setCategory] = useState("");
 
@@ -35,6 +35,7 @@ const HorizontalCard = () => {
       <div className="card py-5 flex items-center min-w-screen overflow-hidden justify-between px-10 overflow-x-auto gap-3">
         {popular.map((elem, i) => (
           <Link
+          to={`/${elem.media_type}/details/${elem.id}`}
             key={i}
             className="flex min-w-[20%] h-36 bg-[#1F2937] p-2 rounded-md"
           >

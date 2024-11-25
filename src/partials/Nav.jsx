@@ -89,6 +89,7 @@ const Nav = () => {
         <div className="absolute flex flex-col w-80 max-h-96 bg-zinc-800 mt-2 rounded-md overflow-auto">
           {searches.map((s, i) => (
             <Link
+            to={`/${s.media_type}/details/${s.id}`}
               key={i}
               className="p-5 text-lg border-b-[.5px] border-zinc-500 mx-2"
             >
