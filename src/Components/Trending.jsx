@@ -33,6 +33,9 @@ const Trending = () => {
     <div className="w-full min-h-screen">
       <Nav />
       <div className="px-10">
+    <div className="w-full min-h-screen">
+      <Nav />
+      <div className="px-10">
         <div className="flex items-center gap-2">
           <i
             onClick={() => navigate(-1)}
